@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.env
+.ipynb_checkpoints/
+# Data/Models
+data/*.parquet
+models/*.joblib
+models/*.pkl
+# OS/VSCode
+.DS_Store
+.vscode/
