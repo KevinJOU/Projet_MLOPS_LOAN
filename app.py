@@ -1,5 +1,5 @@
 # 1) Imports
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, render_template
 import os, joblib, numpy as np
 from logging.config import dictConfig
 
@@ -48,6 +48,13 @@ def predict_form():
     except Exception as e:
         app.logger.warning("Form parsing error: %s", e)
         return render_template("index.html", result={"error": "Saisie invalide"})
+    
+    except KeyError as e:
+        app.logger.warning("Champ manquant: %s", e)
+        return render_template("index.html", result={"error": "Champ manquant"})
+    except ValueError as e:
+        app.logger.warning("Valeur non numérique: %s", e)
+        return render_template("index.html", result={"error": "Valeur non numérique"})
 
     X = np.array([[feats[col] for col in feature_order]], dtype=float)
     if scaler is not None:
