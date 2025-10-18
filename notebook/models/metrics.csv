@@ -1,0 +1,4 @@
+model,auc
+DecisionTree,0.9917095009119549
+RandomForest,0.9998831039628585
+LogisticRegression,0.9999883933012768

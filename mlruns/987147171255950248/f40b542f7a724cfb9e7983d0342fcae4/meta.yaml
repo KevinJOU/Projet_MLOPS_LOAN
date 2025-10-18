@@ -1,0 +1,15 @@
+artifact_uri: file:C:/Users/kjoub/Documents/Formation_Data/DU/MLOps/Projet_LOAN/dev_models_loan/mlruns/987147171255950248/f40b542f7a724cfb9e7983d0342fcae4/artifacts
+end_time: 1760774223474
+entry_point_name: ''
+experiment_id: '987147171255950248'
+lifecycle_stage: active
+run_id: f40b542f7a724cfb9e7983d0342fcae4
+run_name: RF_ne300_d12_mss2_mflog2
+run_uuid: f40b542f7a724cfb9e7983d0342fcae4
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1760774220286
+status: 3
+tags: []
+user_id: kjoub
